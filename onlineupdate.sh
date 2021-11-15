@@ -26,7 +26,7 @@ machine_choose () {
             ;;
         2)
             echo -e '\e[92m已选择R2S\e[0m'
-            wget https://raw.githubusercontent.com/lone-wind/scripts/main/fusionwrt/r2s_update.sh && sh r2s_update.sh
+            wget https://raw.githubusercontent.com/youngshook/scripts/main/fusionwrt/r2s_update.sh && sh r2s_update.sh
             ;;
         3)
             echo -e '\e[92m已选择X86\e[0m'
