@@ -6,7 +6,7 @@ clean_up () {
 #检查内存
 check_tmp () {
     mount -t tmpfs -o remount,size=100% tmpfs /tmp
-    real_mem=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}') && mini_mem=1572864
+    real_mem=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}') && mini_mem=1000000
     if [ $real_mem -ge $mini_mem ]; then 
         work_path=/tmp
     else
